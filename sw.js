@@ -1,5 +1,5 @@
 const fetchText=async()=>{
-    const res= await fetch("https://random-data-api.com/api/v2/users");
+    const res= await fetch("./testing.json");
     const data=await res.json();
     return data;
 }

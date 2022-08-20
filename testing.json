@@ -1,0 +1,39 @@
+{
+    "id": 4252,
+    "uid": "76a620c1-c49e-4a41-b903-029cc41d3ad1",
+    "password": "CIfKUuv79g",
+    "first_name": "AKB",
+    "last_name": "Wolff",
+    "username": "riley.wolff",
+    "email": "AKB.wolff@email.com",
+    "avatar": "https://robohash.org/autemquashic.png?size=300x300&set=set1",
+    "gender": "Bigender",
+    "phone_number": "+964 (749) 072-3519 x6587",
+    "social_insurance_number": "933657256",
+    "date_of_birth": "2004-05-16",
+    "employment": {
+        "title": "Global Producer",
+        "key_skill": "Fast learner"
+    },
+    "address": {
+        "city": "O'Connellside",
+        "street_name": "Kessler Spur",
+        "street_address": "5602 Millard Vista",
+        "zip_code": "67692-7187",
+        "state": "Tennessee",
+        "country": "United States",
+        "coordinates": {
+            "lat": 72.48745798097605,
+            "lng": -21.680562651049286
+        }
+    },
+    "credit_card": {
+        "cc_number": "4854921441834"
+    },
+    "subscription": {
+        "plan": "Silver",
+        "status": "Blocked",
+        "payment_method": "Debit card",
+        "term": "Monthly"
+    }
+}
