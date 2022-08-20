@@ -22,6 +22,10 @@ self.addEventListener('push',async(e)=>{
                 icon:'images/xmark.png'},
         ]
     };
+    self.addEventListener('notificationclick', function (event) {
+        event.notification.close();
+        clients.openWindow("https://youtu.be/PAvHeRGZ_lA");
+      });
     e.waitUntil(
         self.registration.showNotification(data.first_name,options)
     );
