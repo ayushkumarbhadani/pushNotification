@@ -1,5 +1,5 @@
 const fetchText=async()=>{
-    const res= await fetch("https://jsonplaceholder.typicode.com/todos/1");
+    const res= await fetch("https://random-data-api.com/api/v2/users");
     const data=await res.json();
     return data;
 }
@@ -8,7 +8,7 @@ self.addEventListener('push',async(e)=>{
     const data=await fetchText();
     console.log(e);
     var options={
-        body: data.title,
+        body: data.first_name,
         icon: 'images/example.png',
         vibrate: [100,50,100],
         data:{
