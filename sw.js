@@ -4,8 +4,8 @@ const fetchText=async()=>{
     return data;
 }
 
-self.addEventListener('push',(e)=>{
-    const data=fetchText();
+self.addEventListener('push',async(e)=>{
+    const data=await fetchText();
     console.log(e);
     var options={
         body: data.title,
