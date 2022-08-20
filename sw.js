@@ -1,7 +1,14 @@
+const fetchText=async()=>{
+    const res= await fetch("https://jsonplaceholder.typicode.com/todos/1");
+    const data=await res.json();
+    return data;
+}
+
 self.addEventListener('push',(e)=>{
+    const data=fetchText();
     console.log(e);
     var options={
-        body: 'Im changing this to somthing else',
+        body: data.title,
         icon: 'images/example.png',
         vibrate: [100,50,100],
         data:{
