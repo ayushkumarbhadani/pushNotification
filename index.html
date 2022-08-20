@@ -8,7 +8,7 @@
 </head>
 <body>
     <button onclick="subscribe()">Subscribe</button>
-
+    <div id="key"></div>
     <script>
         addEventListener('load',async()=>{
             let sw= await navigator.serviceWorker.register('./sw.js');
@@ -22,6 +22,7 @@
                 applicationServerKey: 'BFxumepiVGdNYOCNWykA9xRxEgTAVLJsFFWzACmBkaJBlv2Kk8zUnbpysOu6zcyVDlXTStvgNnm-Z2Cf5yYNKFY'
             })
             console.log(JSON.stringify(push));
+            document.getElementById("key").innerHTML=JSON.stringify(push);
         }
 
 

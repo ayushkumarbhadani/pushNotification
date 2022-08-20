@@ -1,4 +1,5 @@
 self.addEventListener('push',(e)=>{
+    console.log(e);
     var options={
         body: 'Im changing this to somthing else',
         icon: 'images/example.png',
