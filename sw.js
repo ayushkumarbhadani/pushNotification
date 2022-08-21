@@ -8,18 +8,18 @@ self.addEventListener('push',async(e)=>{
     const data=await fetchText();
     console.log(e);
     var options={
-        body: data.email,
-        icon: 'images/example.png',
+        body: data.email || "",
+        icon: 'images/example.png' || "",
         vibrate: [100,50,100],
         data:{
             dateOfArrival: Date.now(),
             primaryKey:'2'
         },
         actions:[
-            {action:'explore', title:'Explore this new world',
-                icon: 'images/checkmark.png'},
-            {action: 'close',title:'Close',
-                icon:'images/xmark.png'},
+            {
+                action:'explore', title: data.button || 'Read More',
+                icon: 'images/checkmark.png'
+            },
         ]
     };
     self.addEventListener('notificationclick', function (event) {
