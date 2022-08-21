@@ -1,5 +1,5 @@
 const fetchText=async()=>{
-    const res= await fetch("./testing.json");
+    const res= await fetch("https://akb2-push-notification.herokuapp.com/pushNotificationData");
     const data=await res.json();
     return data;
 }
